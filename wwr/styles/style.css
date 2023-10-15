@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Rock+Salt&display=swap');
+
+:root {
+    --heading-font: "Rock Salt";
+    --paragraph-font: "Roboto Condensed", Helvetica, sans-serif;
+}
+
 #content{
     max-width: 1600px;
     margin: 0 auto;
@@ -7,6 +14,8 @@ nav a {
     text-align: center;
     color: #463730;
     text-decoration: none;
+    font-family: var(--paragraph-font);
+    padding: 35px;
 }
 
 #hero-msg h1 {
@@ -32,7 +41,9 @@ main section {
 }
 
 body {
-    background-color: #fee9e1; 
+    background-color: #fee9e1;
+    margin: 0;
+    padding: 0;
 }
 header {
     background-color:#fee9e1;
@@ -41,30 +52,34 @@ nav a:hover {
     background-color: #463730;
     color: #fee9e1;
 }
-.book {
-    background-color: #fee9e1;
-    color: #463730;
-    text-decoration: none;
-}
-.book:hover {
+.book, .join {
     background-color: #463730;
     color: #fee9e1;
-}
-.join {
-    background-color: #463730;
-    color: #759fbc;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
+.book:hover {
+    background-color: #759fbc;
+    color: #fee9e1;
+}
+
 .join:hover {
     background-color: #fee9e1;
     color: #463730;
 }
 .msg {
-    background-color: #463730;
+    background-color: #1f5673;
+    line-height: 1.5em;
+    padding: 35px;
 }
 footer{
-    background-color: #463730;
+    background-color: #1f5673;
     color: #fee9e1;
+    padding: 25px 50px;
+    margin-top: 200px;
 }
 footer a {
     color: #fee9e1;
@@ -80,8 +95,14 @@ footer p a:hover {
     text-decoration: underline;
 } 
 
-.home-tittle{
+footer .social img {
+    padding-top: 15px;
+}
+
+.home-title {
     color: #463730;
+    font-size: 2em;
+    margin-top: 10px;
 }
 
 h4{
@@ -93,11 +114,42 @@ h4{
 }
 .msg p {
     color: #fee9e1;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 .logo {
     width: 80px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+}
+
+p,a {
+    font-family: var(--paragraph-font);
+}
+
+h2 {
+    margin: 0;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
+
+.card-img {
+    border: 10px solid #759fbc;
+}
+
+main section img {
+    box-sizing: border-box;
 }
